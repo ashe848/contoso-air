@@ -47,13 +47,13 @@ spec:
             successThreshold: 1
             initialDelaySeconds: 3
           startupProbe:
-  tcpSocket:
-    port: 3000
-  periodSeconds: 5
-  timeoutSeconds: 7
-  failureThreshold: 3
-  successThreshold: 1
-  initialDelaySeconds: 5
+            tcpSocket:
+              port: 3000
+            periodSeconds: 5
+            timeoutSeconds: 7
+            failureThreshold: 3
+            successThreshold: 1
+            initialDelaySeconds: 5
           securityContext:
             seccompProfile:
               type: RuntimeDefault
